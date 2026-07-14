@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">浮力探險所社群預覽圖</title>
+  <desc id="desc">深藍與水藍色的浮力教材預覽圖，中央是一艘船與浮力、重量箭頭，左側列出互動實驗、原理動畫與闖關挑戰。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#e9fbfd"/><stop offset=".55" stop-color="#fffdf7"/><stop offset="1" stop-color="#d7f5fa"/></linearGradient>
+    <linearGradient id="water" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#22a6bd"/><stop offset="1" stop-color="#075985"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#073b4c" flood-opacity=".18"/></filter>
+    <marker id="upArrow" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto"><path d="M0 0L22 11 0 22Z" fill="#ffd166"/></marker>
+    <marker id="downArrow" markerUnits="userSpaceOnUse" markerWidth="22" markerHeight="22" refX="20" refY="11" orient="auto"><path d="M0 0L22 11 0 22Z" fill="#ef476f"/></marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1120" cy="76" r="118" fill="#bdeef6" opacity=".55"/>
+  <circle cx="70" cy="590" r="150" fill="#ffd166" opacity=".20"/>
+
+  <g transform="translate(70 58)">
+    <circle cx="38" cy="38" r="35" fill="#fff" stroke="#073b4c" stroke-width="5"/>
+    <rect x="18" y="33" width="9" height="22" rx="5" fill="#0696a7"/>
+    <rect x="32" y="22" width="9" height="33" rx="5" fill="#0696a7"/>
+    <rect x="46" y="28" width="9" height="27" rx="5" fill="#0696a7"/>
+    <text x="92" y="25" font-family="Microsoft JhengHei, sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="#0696a7">自然科學 × 探究實作</text>
+    <text x="92" y="64" font-family="Microsoft JhengHei, sans-serif" font-size="34" font-weight="900" fill="#073b4c">浮力探險所</text>
+  </g>
+
+  <g transform="translate(75 215)">
+    <text x="0" y="0" font-family="Microsoft JhengHei, sans-serif" font-size="70" font-weight="900" letter-spacing="-4" fill="#073b4c">重的東西</text>
+    <text x="0" y="78" font-family="Microsoft JhengHei, sans-serif" font-size="70" font-weight="900" letter-spacing="-4" fill="#073b4c">一定會沉嗎？</text>
+    <text x="3" y="126" font-family="Microsoft JhengHei, sans-serif" font-size="25" font-weight="700" fill="#41616d">調整質量、體積與液體密度，親手找出答案。</text>
+    <g transform="translate(0 160)" font-family="Microsoft JhengHei, sans-serif" font-size="21" font-weight="900">
+      <rect width="145" height="50" rx="25" fill="#073b4c"/><text x="72" y="33" text-anchor="middle" fill="#fff">互動實驗</text>
+      <rect x="158" width="145" height="50" rx="25" fill="#ffd166"/><text x="230" y="33" text-anchor="middle" fill="#073b4c">原理動畫</text>
+      <rect x="316" width="145" height="50" rx="25" fill="#ef476f"/><text x="388" y="33" text-anchor="middle" fill="#fff">闖關挑戰</text>
+    </g>
+    <text x="2" y="264" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing=".5" fill="#075985">prayer168.github.io/buoyancy</text>
+  </g>
+
+  <g transform="translate(625 115)" filter="url(#shadow)">
+    <rect width="500" height="410" rx="34" fill="#fff" stroke="#cbdde1" stroke-width="2"/>
+    <path d="M0 245Q55 220 110 245T220 245T330 245T440 245T520 245V410H0Z" fill="url(#water)"/>
+    <g transform="translate(67 84)">
+      <path d="M18 115H350L315 220H60Z" fill="#f3f5f7" stroke="#073b4c" stroke-width="8"/>
+      <path d="M92 115V52H267V115" fill="#fff" stroke="#073b4c" stroke-width="8"/>
+      <rect x="125" y="70" width="42" height="28" rx="5" fill="#7dd3fc" stroke="#073b4c" stroke-width="4"/>
+      <rect x="195" y="70" width="42" height="28" rx="5" fill="#7dd3fc" stroke="#073b4c" stroke-width="4"/>
+      <path d="M267 115L315 140H350" fill="#ffb703" stroke="#073b4c" stroke-width="8"/>
+    </g>
+    <path d="M250 52V125" stroke="#ef476f" stroke-width="11" stroke-linecap="round" marker-end="url(#downArrow)"/>
+    <text x="280" y="75" font-family="Microsoft JhengHei, sans-serif" font-size="21" font-weight="900" fill="#073b4c">重量</text>
+    <path d="M250 376V302" stroke="#ffd166" stroke-width="11" stroke-linecap="round" marker-end="url(#upArrow)"/>
+    <text x="280" y="364" font-family="Microsoft JhengHei, sans-serif" font-size="21" font-weight="900" fill="#fff">浮力</text>
+    <rect x="328" y="28" width="138" height="44" rx="22" fill="#073b4c"/>
+    <text x="397" y="57" text-anchor="middle" font-family="Microsoft JhengHei, sans-serif" font-size="18" font-weight="900" fill="#ffd166">國小高年級</text>
+  </g>
+</svg>

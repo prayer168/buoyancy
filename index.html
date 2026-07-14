@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="適合國小高年級的浮力互動數位教材，透過受力示意、變因模擬、動畫與闖關理解沉浮原理。" />
+  <meta name="theme-color" content="#073b4c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='29' fill='%23fff' stroke='%23073b4c' stroke-width='5'/%3E%3Cpath d='M10 38q11-7 22 0t22 0v14H10z' fill='%230696a7'/%3E%3Cpath d='M22 30h20l-4 10H26z' fill='%23ffd166' stroke='%23073b4c' stroke-width='3'/%3E%3C/svg%3E" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="浮力探險所" />
+  <meta property="og:url" content="https://prayer168.github.io/buoyancy/" />
+  <meta property="og:title" content="浮力探險所｜互動數位教材" />
+  <meta property="og:description" content="調整質量、體積與液體密度，透過互動實驗、原理動畫與闖關挑戰理解浮力。" />
+  <meta property="og:image" content="https://prayer168.github.io/buoyancy/assets/social-preview.png" />
+  <meta property="og:image:secure_url" content="https://prayer168.github.io/buoyancy/assets/social-preview.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="浮力探險所社群預覽圖，呈現船舶、浮力與重量箭頭，以及互動實驗、原理動畫和闖關挑戰。" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="浮力探險所｜互動數位教材" />
+  <meta name="twitter:description" content="調整質量、體積與液體密度，透過互動實驗、原理動畫與闖關挑戰理解浮力。" />
+  <meta name="twitter:image" content="https://prayer168.github.io/buoyancy/assets/social-preview.png" />
+  <meta name="twitter:image:alt" content="浮力探險所社群預覽圖，呈現船舶與向上浮力、向下重量。" />
+  <title>浮力探險所｜互動數位教材</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson-content">跳到教材內容</a>
+  <header class="site-header">
+    <div class="brand-wrap">
+      <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div>
+        <p class="eyebrow">自然科學 × 探究實作</p>
+        <h1>浮力探險所</h1>
+      </div>
+    </div>
+    <div class="header-badge"><span aria-hidden="true">◉</span> 國小高年級</div>
+  </header>
+
+  <nav class="tabs" aria-label="教材單元" role="tablist">
+    <button role="tab" id="tab-mission" aria-controls="mission" aria-selected="true" data-tab="mission"><span>01</span>任務</button>
+    <button role="tab" id="tab-explore" aria-controls="explore" aria-selected="false" data-tab="explore" tabindex="-1"><span>02</span>探索</button>
+    <button role="tab" id="tab-lab" aria-controls="lab" aria-selected="false" data-tab="lab" tabindex="-1"><span>03</span>實驗室</button>
+    <button role="tab" id="tab-animation" aria-controls="animation" aria-selected="false" data-tab="animation" tabindex="-1"><span>04</span>動畫</button>
+    <button role="tab" id="tab-apply" aria-controls="apply" aria-selected="false" data-tab="apply" tabindex="-1"><span>05</span>應用</button>
+    <button role="tab" id="tab-quiz" aria-controls="quiz" aria-selected="false" data-tab="quiz" tabindex="-1"><span>06</span>闖關</button>
+    <button role="tab" id="tab-resources" aria-controls="resources" aria-selected="false" data-tab="resources" tabindex="-1"><span>07</span>資源</button>
+  </nav>
+
+  <main id="lesson-content">
+    <section class="panel active" id="mission" role="tabpanel" aria-labelledby="tab-mission">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">今日任務</p>
+          <h2>破解「鋼鐵巨輪為什麼不沉？」</h2>
+          <p class="lead">你是港口科學顧問。請蒐集浮力證據，替一艘新船判斷安全載重，並用科學理由說服船長。</p>
+          <button class="primary-action" data-go="explore">開始探險 <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero-scene" aria-label="剖面示意：一艘船浮在水面，船底排開一部分水">
+          <svg viewBox="0 0 620 390" role="img" aria-labelledby="heroTitle heroDesc">
+            <title id="heroTitle">船舶浮在水面的剖面示意</title>
+            <desc id="heroDesc">船的一部分浸入水中，船底下方以亮色標出排開的水，向上的浮力箭頭與向下的重量箭頭大小相等。</desc>
+            <defs>
+              <linearGradient id="missionSky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#dff7fb"/><stop offset="1" stop-color="#fffaf0"/></linearGradient>
+              <linearGradient id="missionWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#1fa4c2"/><stop offset="1" stop-color="#075985"/></linearGradient>
+            </defs>
+            <rect width="620" height="390" rx="30" fill="url(#missionSky)"/>
+            <path d="M0 230 Q40 215 80 230 T160 230 T240 230 T320 230 T400 230 T480 230 T560 230 T640 230 V390 H0Z" fill="url(#missionWater)"/>
+            <g class="boat-float">
+              <path d="M125 185 H485 L445 285 H180Z" fill="#f3f5f7" stroke="#073b4c" stroke-width="7"/>
+              <path d="M220 185 V115 H405 V185" fill="#fff" stroke="#073b4c" stroke-width="7"/>
+              <rect x="250" y="135" width="42" height="31" rx="5" fill="#7dd3fc" stroke="#073b4c" stroke-width="4"/>
+              <rect x="325" y="135" width="42" height="31" rx="5" fill="#7dd3fc" stroke="#073b4c" stroke-width="4"/>
+              <path d="M405 185 L452 212 H485" fill="#ffb703" stroke="#073b4c" stroke-width="7"/>
+            </g>
+            <path d="M180 236 Q310 266 445 236 L427 281 H193Z" fill="#7dd3fc" opacity=".65" stroke="#bae6fd" stroke-width="3" stroke-dasharray="8 8"/>
+            <g class="force-arrow downward">
+              <path d="M310 70 V142" stroke="#ef476f" stroke-width="10" stroke-linecap="round"/>
+              <path d="M292 126 L310 150 L328 126" fill="#ef476f"/>
+              <text x="340" y="104" class="svg-label">重量</text>
+            </g>
+            <g class="force-arrow upward">
+              <path d="M310 337 V270" stroke="#ffd166" stroke-width="10" stroke-linecap="round"/>
+              <path d="M292 285 L310 261 L328 285" fill="#ffd166"/>
+              <text x="340" y="325" class="svg-label light">浮力</text>
+            </g>
+          </svg>
+          <p class="diagram-note">示意圖｜箭頭長度代表力的大小</p>
+        </div>
+      </div>
+      <div class="goal-grid" aria-label="學習目標">
+        <article><b>01</b><div><h3>辨認兩個力</h3><p>指出水中物體受到的向上浮力與向下重量。</p></div></article>
+        <article><b>02</b><div><h3>操作三個變因</h3><p>比較質量、體積與流體密度如何影響沉浮。</p></div></article>
+        <article><b>03</b><div><h3>用證據解釋</h3><p>以排開流體的重量和平均密度說明生活現象。</p></div></article>
+      </div>
+      <aside class="misconception"><strong>先別急著下結論：</strong>「重的東西一定沉、輕的東西一定浮」是真的嗎？整份教材都在找這個問題的證據。</aside>
+    </section>
+
+    <section class="panel" id="explore" role="tabpanel" aria-labelledby="tab-explore" hidden>
+      <div class="section-heading"><p class="kicker">概念探索</p><h2>水從四面八方推，為什麼結果向上？</h2><p>流體越深處壓力越大。物體底部受到的向上推力，比頂部受到的向下推力大，合起來形成淨向上的浮力。</p></div>
+      <div class="concept-grid">
+        <article class="pressure-card card">
+          <div class="card-label">證據 A｜深度與壓力</div>
+          <svg viewBox="0 0 520 410" role="img" aria-label="完全浸在水中的方塊，底部較長的向上壓力箭頭大於頂部較短的向下壓力箭頭，兩側同深度的水平力互相抵消">
+            <defs><linearGradient id="exploreWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#caf0f8"/><stop offset="1" stop-color="#0e7490"/></linearGradient><marker id="arrowTeal" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16Z" fill="#073b4c"/></marker></defs>
+            <rect x="45" y="45" width="430" height="330" rx="20" fill="url(#exploreWater)"/>
+            <path d="M45 96 Q85 80 125 96 T205 96 T285 96 T365 96 T445 96 T525 96" fill="none" stroke="#fff" stroke-width="6" opacity=".8"/>
+            <rect x="190" y="155" width="140" height="125" rx="12" fill="#ffb703" stroke="#073b4c" stroke-width="6"/>
+            <g stroke="#073b4c" stroke-width="7" marker-end="url(#arrowTeal)">
+              <path d="M225 105 V140"/><path d="M260 105 V140"/><path d="M295 105 V140"/>
+              <path d="M215 355 V305"/><path d="M260 365 V305"/><path d="M305 355 V305"/>
+              <path d="M120 190 H165"/><path d="M120 245 H165"/><path d="M400 190 H355"/><path d="M400 245 H355"/>
+            </g>
+            <text x="345" y="125">上方較淺：壓力較小</text><text x="335" y="332">下方較深：壓力較大</text>
+          </svg>
+          <p class="concept-takeaway"><span>所以</span> 上下壓力差產生淨向上的力。</p>
+        </article>
+        <article class="principle-card card">
+          <div class="card-label">證據 B｜阿基米德原理</div>
+          <div class="formula-box"><span>浮力</span><b>=</b><span>排開流體的重量</span></div>
+          <p>完全浸沒時，可用 <strong>浮力 = 流體密度 × 排開體積 × 重力加速度</strong> 表示。國小階段先掌握關係：排開越多、流體越密，浮力越大。</p>
+          <div class="compare-visual" aria-label="同體積木塊分別浸在淡水和較密的鹽水中，鹽水提供較大浮力">
+            <div><span class="mini-tank fresh"><i></i></span><b>淡水</b><small>流體密度較小</small></div>
+            <div><span class="mini-tank salt"><i></i></span><b>鹽水</b><small>相同排水體積，浮力較大</small></div>
+          </div>
+          <details><summary>精確說法：沉下去就沒有浮力嗎？</summary><p>不是。只要物體在流體中，就會受到浮力；沉下去表示浮力小於重量，而不是浮力消失。</p></details>
+        </article>
+      </div>
+      <div class="three-states">
+        <article><div class="state-icon rise">↑</div><h3>上升後漂浮</h3><p>物體平均密度小於流體；穩定漂浮時，浮力等於重量。</p></article>
+        <article><div class="state-icon hover">＝</div><h3>懸浮</h3><p>平均密度等於流體，完全浸沒時浮力與重量平衡。</p></article>
+        <article><div class="state-icon sink">↓</div><h3>下沉</h3><p>物體平均密度大於流體；離開容器底部時，重量大於浮力。</p></article>
+      </div>
+      <button class="primary-action centered" data-go="lab">帶著概念進實驗室 →</button>
+    </section>
+
+    <section class="panel" id="lab" role="tabpanel" aria-labelledby="tab-lab" hidden>
+      <div class="section-heading"><p class="kicker">沉浮實驗室</p><h2>調整變因，先預測、再放手</h2><p>任務：改變物體質量、體積與液體種類。先選擇預測，再按「放手測試」，觀察數值與受力證據。</p></div>
+      <div class="lab-layout">
+        <div class="controls card">
+          <div class="control-group"><label for="mass">物體質量 <output id="massOut" for="mass">600 g</output></label><input id="mass" type="range" min="100" max="1800" value="600" step="50"><small>重量和質量同方向變化</small></div>
+          <div class="control-group"><label for="volume">物體體積 <output id="volumeOut" for="volume">1000 cm³</output></label><input id="volume" type="range" min="300" max="1600" value="1000" step="50"><small>完全浸沒時，體積就是最大排水體積</small></div>
+          <fieldset><legend>液體種類</legend><div class="segmented"><label><input type="radio" name="fluid" value="800"><span>食用油<br><small>0.80 g/cm³</small></span></label><label><input type="radio" name="fluid" value="1000" checked><span>淡水<br><small>1.00 g/cm³</small></span></label><label><input type="radio" name="fluid" value="1030"><span>鹽水<br><small>1.03 g/cm³</small></span></label></div></fieldset>
+          <fieldset><legend>我的預測</legend><div class="prediction-buttons"><button data-predict="float">會漂浮</button><button data-predict="hover">會懸浮</button><button data-predict="sink">會下沉</button></div></fieldset>
+          <div class="lab-actions"><button id="testBtn" class="primary-action">放手測試</button><button id="resetLab" class="secondary-action">重設</button></div>
+        </div>
+        <div class="simulation card">
+          <div class="sim-status"><span>測試槽</span><b id="resultBadge">等待預測</b></div>
+          <svg id="tankSvg" viewBox="0 0 620 520" role="img" aria-labelledby="tankTitle tankDesc">
+            <title id="tankTitle">浮力沉浮模擬水槽</title><desc id="tankDesc">一個方塊在淡水水槽中等待測試，旁邊顯示向上浮力與向下重量箭頭。</desc>
+            <defs><linearGradient id="tankFluid" x1="0" x2="0" y1="0" y2="1"><stop id="fluidTop" stop-color="#bdeef6"/><stop id="fluidBottom" offset="1" stop-color="#0e7490"/><animate attributeName="x1" values="0;0" dur="1s"/></linearGradient><marker id="arrowUp" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0,0 L20,10 L0,20Z" fill="#ffd166"/></marker><marker id="arrowDown" markerUnits="userSpaceOnUse" markerWidth="20" markerHeight="20" refX="18" refY="10" orient="auto"><path d="M0,0 L20,10 L0,20Z" fill="#ef476f"/></marker></defs>
+            <path d="M75 60 V465 Q75 490 100 490 H520 Q545 490 545 465 V60" fill="#e8f8fb" stroke="#073b4c" stroke-width="8"/>
+            <path id="fluidShape" d="M80 150 Q125 135 170 150 T260 150 T350 150 T440 150 T540 150 V465 Q540 485 520 485 H100 Q80 485 80 465Z" fill="url(#tankFluid)"/>
+            <g id="objectGroup" class="object-waiting"><rect id="simObject" x="245" y="185" width="130" height="130" rx="12" fill="#ffb703" stroke="#073b4c" stroke-width="7"/><path d="M268 215 H352 M268 240 H330" stroke="#fff" stroke-width="8" stroke-linecap="round" opacity=".65"/></g>
+            <g id="weightArrow"><path id="weightLine" d="M420 190 V285" stroke="#ef476f" stroke-width="10" marker-end="url(#arrowDown)"/><text x="435" y="230">重量</text></g>
+            <g id="buoyancyArrow"><path id="buoyancyLine" d="M200 315 V220" stroke="#ffd166" stroke-width="10" marker-end="url(#arrowUp)"/><text x="105" y="270">最大浮力</text></g>
+            <text id="liquidLabel" x="105" y="455">淡水 1.00 g/cm³</text>
+          </svg>
+          <p class="diagram-note">教學模擬｜方塊大小為體積的概念化呈現，非真實比例</p>
+          <div class="readouts" aria-live="polite">
+            <div><span>物體平均密度</span><b id="objectDensity">0.60 g/cm³</b></div>
+            <div><span>最大可得浮力</span><b id="maxBuoyancy">9.8 N</b></div>
+            <div><span>物體重量</span><b id="weightReadout">5.9 N</b></div>
+            <div><span>穩定時排開體積</span><b id="displacedReadout">—</b></div>
+          </div>
+          <div id="labFeedback" class="feedback" aria-live="polite">先調整條件並選擇你的預測。</div>
+        </div>
+      </div>
+      <aside class="evidence-prompt"><strong>科學筆記：</strong><span id="evidenceText">要判斷沉浮，不能只看質量；還要把質量和體積合起來比較平均密度。</span></aside>
+    </section>
+
+    <section class="panel" id="animation" role="tabpanel" aria-labelledby="tab-animation" hidden>
+      <div class="section-heading"><p class="kicker">原理動畫</p><h2>一格一格看見浮力形成</h2><p>播放後依序觀察：四周的水施力、深處壓力較大、上下作用合成浮力、最後比較重量。</p></div>
+      <div class="animation-layout">
+        <div class="animation-stage card" id="animationStage" data-stage="0">
+          <svg viewBox="0 0 760 520" role="img" aria-labelledby="animTitle animDesc">
+            <title id="animTitle">浮力形成的分段動畫</title><desc id="animDesc">水中的方塊先顯示四周壓力箭頭，再突顯底部向上推力較大，接著合成向上的浮力，最後與向下重量比較。</desc>
+            <defs><linearGradient id="animWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#d7f5fa"/><stop offset="1" stop-color="#0e7490"/></linearGradient><marker id="animArrow" markerUnits="userSpaceOnUse" markerWidth="18" markerHeight="18" refX="16" refY="9" orient="auto"><path d="M0,0 L18,9 L0,18Z" fill="context-stroke"/></marker></defs>
+            <rect x="55" y="55" width="650" height="420" rx="28" fill="url(#animWater)"/>
+            <path d="M55 110 Q110 92 165 110 T275 110 T385 110 T495 110 T605 110 T715 110" fill="none" stroke="#fff" stroke-width="6" opacity=".8"/>
+            <g class="anim-block"><rect x="285" y="205" width="190" height="155" rx="14" fill="#ffb703" stroke="#073b4c" stroke-width="8"/><circle cx="330" cy="250" r="12" fill="#fff" opacity=".5"/><circle cx="430" cy="315" r="18" fill="#fff" opacity=".35"/></g>
+            <g class="pressure-arrows top" color="#073b4c"><path d="M325 145 V190"/><path d="M380 145 V190"/><path d="M435 145 V190"/></g>
+            <g class="pressure-arrows bottom" color="#073b4c"><path d="M325 440 V380"/><path d="M380 450 V380"/><path d="M435 440 V380"/></g>
+            <g class="pressure-arrows sides" color="#073b4c"><path d="M200 245 H268"/><path d="M200 315 H268"/><path d="M560 245 H492"/><path d="M560 315 H492"/></g>
+            <g class="net-force"><path d="M175 385 V220"/><text x="88" y="310">合成浮力</text></g>
+            <g class="object-weight"><path d="M585 185 V350"/><text x="603" y="275">重量</text></g>
+          </svg>
+          <div class="stage-caption" aria-live="polite"><span id="stageNumber">準備</span><p id="stageCaption">按下播放，從「水怎麼推物體」開始觀察。</p></div>
+        </div>
+        <div class="animation-controls card">
+          <div class="step-list" aria-label="動畫步驟">
+            <button data-step="1"><span>1</span><div><b>四周施力</b><small>水對接觸面都會推</small></div></button>
+            <button data-step="2"><span>2</span><div><b>深處壓力較大</b><small>底部箭頭比頂部長</small></div></button>
+            <button data-step="3"><span>3</span><div><b>合成浮力</b><small>水平作用互相抵消</small></div></button>
+            <button data-step="4"><span>4</span><div><b>比較重量</b><small>決定上升、懸浮或下沉</small></div></button>
+          </div>
+          <div class="playback"><button id="playAnimation" class="primary-action">▶ 播放</button><button id="replayAnimation" class="secondary-action">↺ 重播</button><label for="speed">速度 <select id="speed"><option value="1800">慢</option><option value="1200" selected>標準</option><option value="700">快</option></select></label></div>
+          <div class="observe-question"><strong>觀察挑戰</strong><p>如果把方塊移得更深，但仍完全浸沒且水的密度不變，浮力會因深度而增加嗎？</p><button id="revealObservation">查看提示</button><p id="observationHint" hidden>比較上下兩面：兩處壓力都增加，但「壓力差」維持相同，所以理想情況下浮力不因深度改變。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="apply" role="tabpanel" aria-labelledby="tab-apply" hidden>
+      <div class="section-heading"><p class="kicker">生活應用</p><h2>八個場景，一套沉浮線索</h2><p>先在心裡解釋，再翻開卡片。每張卡會改變視覺，顯示真正影響浮力或平均密度的線索。</p></div>
+      <div class="apply-grid" id="applyGrid"></div>
+      <div class="transfer-prompt"><strong>遷移任務</strong><p>任選兩張卡，說出它們「相同的科學原理」和「不同的操作變因」。</p></div>
+    </section>
+
+    <section class="panel" id="quiz" role="tabpanel" aria-labelledby="tab-quiz" hidden>
+      <div class="section-heading quiz-heading"><div><p class="kicker">闖關挑戰</p><h2>用證據完成港口顧問認證</h2><p>每題作答後會立即鎖定並提供解釋。答錯時，先讀提示再繼續。</p></div><div class="score-card"><span>目前得分</span><b><i id="score">0</i> / 10</b><small id="progressText">尚未作答</small></div></div>
+      <div id="quizList" class="quiz-list"></div>
+      <div id="quizSummary" class="quiz-summary" hidden aria-live="polite"><h3 id="summaryTitle"></h3><p id="summaryText"></p><button id="retryQuiz" class="primary-action">重新挑戰</button></div>
+    </section>
+
+    <section class="panel" id="resources" role="tabpanel" aria-labelledby="tab-resources" hidden>
+      <div class="section-heading"><p class="kicker">延伸資源</p><h2>把好奇心帶出教室</h2><p>以下為本教材查核與延伸學習使用的可信資源。英文大學教材適合教師陪同閱讀。</p></div>
+      <div class="resource-grid">
+        <a href="https://openstax.org/books/university-physics-volume-1/pages/14-4-archimedes-principle-and-buoyancy" target="_blank" rel="noopener"><span class="resource-type">開放教科書</span><h3>OpenStax｜Archimedes’ Principle and Buoyancy</h3><p>浮力、壓力差、阿基米德原理與密度關係的完整說明。</p><small>來源：OpenStax　程度：教師／進階　查核：2026-07-14</small></a>
+        <a href="https://hyperphysics.phy-astr.gsu.edu/hbase/pbuoy.html" target="_blank" rel="noopener"><span class="resource-type">大學物理資料庫</span><h3>Georgia State University｜Archimedes’ Principle</h3><p>用排開水的重量說明浮力，並連結密度測量。</p><small>來源：HyperPhysics　程度：教師／進階　查核：2026-07-14</small></a>
+        <a href="https://web.physics.ucsb.edu/~lecturedemonstrations/Composer/Pages/36.36.html" target="_blank" rel="noopener"><span class="resource-type">實驗示範</span><h3>UC Santa Barbara｜Archimedes’ Principle</h3><p>以溢水杯與彈簧秤驗證排開流體重量等於浮力。</p><small>來源：UCSB Physics　程度：教師　查核：2026-07-14</small></a>
+        <a href="https://phet.colorado.edu/zh_TW/simulations/buoyancy" target="_blank" rel="noopener"><span class="resource-type">互動模擬</span><h3>PhET｜浮力</h3><p>進一步操作物體與液體，觀察力、密度和排水量。</p><small>來源：University of Colorado Boulder　程度：學生／教師　查核：2026-07-14</small></a>
+      </div>
+      <div class="teacher-note"><h3>教師使用建議</h3><ol><li>先用黏土球與黏土船引發「相同質量，為何結果不同？」的衝突。</li><li>讓學生在實驗室至少固定兩個變因、只改一個變因。</li><li>要求學生用「因為……所以……證據是……」完成解釋。</li></ol><p><strong>安全提醒：</strong>實體實驗使用裝水容器時，擦乾濺出的水並遠離插座與電器。</p></div>
+      <footer>浮力探險所 · 教學示意均以原生 SVG／CSS 製作 · 無外部圖片資產</footer>
+    </section>
+  </main>
+</body>
+</html>
