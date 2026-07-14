@@ -1,0 +1,15 @@
+【繁體中文】
+「重的東西一定會沉嗎？」答案不只和重量有關，還藏在體積、液體密度與排開的水裡。
+
+《浮力探險所》是一份適合國小高年級的互動數位教材。孩子可以調整物體質量、體積與液體種類，先預測再測試，並透過分段動畫、生活應用翻牌與十題闖關，用證據理解漂浮、懸浮和下沉。
+
+教材支援電腦、平板與手機，歡迎點進去動手找出答案：
+https://prayer168.github.io/buoyancy/
+
+【English】
+“Do heavy objects always sink?” The answer depends on more than weight—it also involves volume, fluid density, and the amount of fluid displaced.
+
+Buoyancy Explorer is an interactive science lesson for upper elementary students. Learners can adjust an object’s mass, volume, and surrounding fluid, make a prediction, and test it. Step-by-step animations, real-life application cards, and a ten-question challenge help them explain floating, neutral buoyancy, and sinking with evidence.
+
+The lesson works on computers, tablets, and phones. Explore it here:
+https://prayer168.github.io/buoyancy/

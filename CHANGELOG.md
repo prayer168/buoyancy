@@ -7,3 +7,4 @@
 - 新增四階段浮力形成動畫、八個生活應用案例與十題四選一闖關。
 - 加入鍵盤頁籤操作、ARIA 狀態、觸控尺寸及降低動畫支援。
 - 新增 1200×630 社群分享圖與 Open Graph／Twitter Card metadata。
+- 發布至 GitHub Pages，並加入繁體中文與英文 Facebook 分享文案。

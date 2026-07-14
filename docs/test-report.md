@@ -57,4 +57,7 @@
 - 2026-07-14 收工前重新驗證 7 頁 × 3 種 viewport，共 21 組，內容、主控台、請求與水平溢出均通過。
 - `git diff --cached --check` 通過。
 - `assets/social-preview.png` 已驗證為 `image/png`、1200×630，並完成 Open Graph／Twitter Card 絕對網址設定與目視安全區檢查。
-- GitHub Pages 部署與公開站複驗進行中；完成後補記公開驗證結果。
+- GitHub Pages 已由 `main` 根目錄建置完成：<https://prayer168.github.io/buoyancy/>。
+- 公開首頁、CSS、JavaScript、分享 PNG 與來源 SVG 均為 HTTP 200；公開 PNG MIME 為 `image/png`，尺寸為 1200×630。
+- 公開站以 390×844、觸控模式複驗：水平溢出 0 px，漂浮結果與 600 cm³ 排水量正確，應用卡可翻面，測驗會鎖定選項。
+- 公開站主控台錯誤與失敗請求均為 0；Open Graph、Twitter Card 與 data-URI favicon 已從渲染後 DOM 確認。
