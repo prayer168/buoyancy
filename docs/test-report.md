@@ -69,3 +69,12 @@
 - 1440×1000、768×1024、390×844 實際渲染均找不到 `.header-badge`，頁首只保留品牌區塊，水平溢出皆為 0 px。
 - 主控台錯誤與失敗請求皆為 0；桌機與手機截圖目視確認沒有留下空白、偏移或裁切。
 - 證據：`docs/screenshots/header-without-grade-desktop.png`、`docs/screenshots/header-without-grade-mobile.png`。
+
+## 1.0.2 頁籤可讀性與反白驗證
+
+- 七個頁籤文字放大：桌機 17.28 px、平板 15.68 px、手機 15.2 px；編號同步放大。
+- 桌機滑鼠移入未選取頁籤後，背景為深藍、文字為白色、編號為黃色，並上移 2 px、出現柔和陰影。
+- 鍵盤焦點提供同等深色反白，並保留 4 px 黃色焦點外框。
+- 1440×1000、768×1024、390×844 的整頁水平溢出皆為 0 px；手機導覽列保留可水平滑動設計。
+- 主控台錯誤與失敗請求皆為 0；`npm.cmd test` 通過 12/12，正式 build、套件安全檢查及 `git diff --check` 通過。
+- 證據：`docs/screenshots/tabs-hover-desktop.png`、`docs/screenshots/tabs-large-mobile.png`。
