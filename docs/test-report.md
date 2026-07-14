@@ -61,3 +61,11 @@
 - 公開首頁、CSS、JavaScript、分享 PNG 與來源 SVG 均為 HTTP 200；公開 PNG MIME 為 `image/png`，尺寸為 1200×630。
 - 公開站以 390×844、觸控模式複驗：水平溢出 0 px，漂浮結果與 600 cm³ 排水量正確，應用卡可翻面，測驗會鎖定選項。
 - 公開站主控台錯誤與失敗請求均為 0；Open Graph、Twitter Card 與 data-URI favicon 已從渲染後 DOM 確認。
+
+## 1.0.1 頁首修正驗證
+
+- 移除頁首右上角「國小高年級」膠囊；社群分享圖中的年級提示保留。
+- `npm.cmd test` 通過 11/11、正式 build 通過、`npm.cmd audit --omit=dev` 為 0 個已知漏洞、`git diff --check` 通過。
+- 1440×1000、768×1024、390×844 實際渲染均找不到 `.header-badge`，頁首只保留品牌區塊，水平溢出皆為 0 px。
+- 主控台錯誤與失敗請求皆為 0；桌機與手機截圖目視確認沒有留下空白、偏移或裁切。
+- 證據：`docs/screenshots/header-without-grade-desktop.png`、`docs/screenshots/header-without-grade-mobile.png`。

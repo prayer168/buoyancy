@@ -28,7 +28,7 @@ npm.cmd run serve
 
 ## 狀態
 
-版本 1.0.0。
+版本 1.0.1。
 
 - 公開教材：<https://prayer168.github.io/buoyancy/>
 - GitHub repository：<https://github.com/prayer168/buoyancy>
