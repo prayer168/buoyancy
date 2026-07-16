@@ -14,6 +14,7 @@ const checks=[
   ['社群預覽 PNG 已建立',fs.existsSync('assets/social-preview.png')],
   ['正式 Open Graph 網址',html.includes('https://prayer168.github.io/buoyancy/assets/social-preview.png')&&html.includes('summary_large_image')],
   ['頁首年級膠囊已移除',!html.includes('class="header-badge"')],
-  ['頁籤具放大與滑鼠反白樣式',css.includes('font-size:1.08rem')&&css.includes('@media(hover:hover)')]
+  ['頁籤具放大與滑鼠反白樣式',css.includes('font-size:1.08rem')&&css.includes('@media(hover:hover)')],
+  ['頁籤不再黏附視窗頂端',css.includes('.tabs{position:static;top:auto}')]
 ];
 let failed=0;for(const [name,ok] of checks){console.log(`${ok?'PASS':'FAIL'} ${name}`);if(!ok)failed++}if(failed)process.exit(1);console.log(`All ${checks.length} structural checks passed.`);

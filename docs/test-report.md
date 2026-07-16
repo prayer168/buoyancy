@@ -78,3 +78,11 @@
 - 1440×1000、768×1024、390×844 的整頁水平溢出皆為 0 px；手機導覽列保留可水平滑動設計。
 - 主控台錯誤與失敗請求皆為 0；`npm.cmd test` 通過 12/12，正式 build、套件安全檢查及 `git diff --check` 通過。
 - 證據：`docs/screenshots/tabs-hover-desktop.png`、`docs/screenshots/tabs-large-mobile.png`。
+
+## 1.0.3 靜態頁籤捲動驗證
+
+- 頁籤導覽的計算樣式為 `position: static`，不再黏附視窗頂端。
+- 在闖關長頁面捲動 650 px 後，頁籤底部座標分別為桌機 −458 px、平板 −467 px、手機 −492 px，三種尺寸均完全離開視窗。
+- 1440×1000、768×1024、390×844 的水平溢出皆為 0 px；主控台錯誤與失敗請求皆為 0。
+- `npm.cmd test` 通過 13/13，正式 build、套件安全檢查及 `git diff --check` 通過。
+- 證據：`docs/screenshots/tabs-static-scrolled-desktop.png`、`docs/screenshots/tabs-static-scrolled-mobile.png`。
