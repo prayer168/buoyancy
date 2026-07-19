@@ -1,15 +1,35 @@
 【繁體中文】
-「重的東西一定會沉嗎？」答案不只和重量有關，還藏在體積、液體密度與排開的水裡。
+🧪🌊 「浮力探險所」升級啦！03 實驗室一口氣加開三個動手做實驗！
 
-《浮力探險所》是一份適合國小高年級的互動數位教材。孩子可以調整物體質量、體積與液體種類，先預測再測試，並透過分段動畫、生活應用翻牌與十題闖關，用證據理解漂浮、懸浮和下沉。
+用 AI 協作把國小自然的浮力課做成線上探險所，這次更新把「先模擬、再動手」搬進實驗室頁籤——每個實驗都能先在螢幕上找出成功條件，再用真實器材驗證。
 
-教材支援電腦、平板與手機，歡迎點進去動手找出答案：
-https://prayer168.github.io/buoyancy/
+📌 浮力挑戰：同一團 300 g 油性黏土，搓成球會沉，捏成缽狀、碗狀竟然能浮，還能載硬幣
+📌 浮沉子：拖動滑桿壓瓶身，親眼看氣泡被壓小、浮沉子往下沉
+📌 自製小潛水艇：壓載艙進水變重、排水變輕，體驗真正潛水艇的上浮下潛
+📌 每個實驗都附材料清單、步驟、觀察重點與安全提醒，教室裡就能重現
+
+最有感的是——孩子會先在模擬裡試出「要捏多大的碗才會浮」，再動手捏黏土驗證，預測→實測→修正的探究循環自然發生。
+
+AI 不是拿來取代老師，而是把備課裡那些重複、瑣碎的工通通交給它，讓我們把時間留給真正重要的事：陪孩子學習。 ❤️
+
+🔗 https://prayer168.github.io/buoyancy/#lab
+
+#數位教材 #國小自然 #浮力 #浮沉子 #探究與實作 #AI輔助教學 #互動教學
 
 【English】
-“Do heavy objects always sink?” The answer depends on more than weight—it also involves volume, fluid density, and the amount of fluid displaced.
+🧪🌊 Big update to Buoyancy Explorer — three hands-on experiments just landed in the Lab tab!
 
-Buoyancy Explorer is an interactive science lesson for upper elementary students. Learners can adjust an object’s mass, volume, and surrounding fluid, make a prediction, and test it. Step-by-step animations, real-life application cards, and a ten-question challenge help them explain floating, neutral buoyancy, and sinking with evidence.
+Built with AI pair-programming, this free interactive lesson for upper elementary now pairs on-screen simulations with real tabletop experiments: find the success condition on screen first, then prove it with your own hands.
 
-The lesson works on computers, tablets, and phones. Explore it here:
-https://prayer168.github.io/buoyancy/
+📌 Clay Boat Challenge: the same 300 g of clay sinks as a ball but floats as a bowl — then see how many coins it can carry
+📌 Cartesian Diver: drag a slider to squeeze the bottle and watch the air bubble shrink as the diver sinks
+📌 DIY Submarine: flood or empty the ballast tank to dive, hover, and surface like the real thing
+📌 Every experiment ships with a materials list, build steps, observation prompts, and safety notes
+
+The best part — kids first discover "how big a bowl do I need?" in the simulation, then grab the clay and verify it: predict, test, revise, just like real scientists.
+
+AI isn't here to replace teachers. It takes the repetitive, tedious parts of prep off our plate, so we can spend our time on what truly matters: being there for our kids. ❤️
+
+🔗 https://prayer168.github.io/buoyancy/#lab
+
+#EdTech #ScienceEducation #Buoyancy #HandsOnLearning #AIinEducation #ElementaryScience #STEM
