@@ -169,6 +169,74 @@
         </div>
       </div>
       <aside class="evidence-prompt"><strong>科學筆記：</strong><span id="evidenceText">要判斷沉浮，不能只看質量；還要把質量和體積合起來比較平均密度。</span></aside>
+
+      <div class="section-heading maker-heading"><p class="kicker">動手做實驗區</p><h2>三個桌上實驗：先模擬，再動手</h2><p>先在模擬裡找出「成功條件」，再照動手做步驟用真實器材驗證。三個裝置的祕密相同：改變整體平均密度，或改變能排開的水量。</p></div>
+      <div class="maker-grid">
+
+        <article class="maker-card card">
+          <div><span class="card-label">實驗 A｜浮力挑戰</span><h3>油性黏土：沉底球變漂浮碗</h3><p class="maker-lead">同一團 300 g 油性黏土，搓成實心球會沉。把它捏成缽狀、碗狀，凹槽越大，碗緣進水前能排開的水越多。</p></div>
+          <div class="sim-status"><span>水槽</span><b id="clayBadge">等待測試</b></div>
+          <svg viewBox="0 0 360 330" role="img" aria-label="示意水槽：一團黏土可在實心球與碗狀之間變形，放入水中觀察沉浮">
+            <defs><linearGradient id="clayWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#bdeef6"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs>
+            <path d="M28 70 V292 Q28 312 48 312 H312 Q332 312 332 292 V70" fill="#e8f8fb" stroke="#073b4c" stroke-width="7"/>
+            <path d="M32 118 Q60 108 88 118 T144 118 T200 118 T256 118 T312 118 T332 118 V292 Q332 308 312 308 H48 Q32 308 32 292Z" fill="url(#clayWater)"/>
+            <g id="clayPos" style="transform:translate(180px,58px)"><g id="clayGroup" class="object-waiting"><ellipse id="clayBody" rx="34" ry="34" fill="#b08968" stroke="#073b4c" stroke-width="5"/><path id="clayCavity" display="none" d="" fill="#e6ccb2" stroke="#073b4c" stroke-width="3"/></g></g>
+            <text x="42" y="98">水面</text>
+          </svg>
+          <div class="control-group"><label for="clayAir">捏出的凹槽容量 <output id="clayAirOut" for="clayAir">0 cm³</output></label><input id="clayAir" type="range" min="0" max="600" step="25" value="0"><small>0 代表實心球；數字越大，碗越寬、越深</small></div>
+          <fieldset><legend>我的預測</legend><div class="prediction-buttons two"><button data-clay-predict="float">會漂浮</button><button data-clay-predict="sink">會下沉</button></div></fieldset>
+          <div class="lab-actions"><button id="clayTest" class="primary-action">放入水中</button><button id="clayReset" class="secondary-action">重設</button></div>
+          <div class="maker-readouts"><div><span>黏土＋凹槽總體積</span><b id="clayTotal">167 cm³</b></div><div><span>整體平均密度</span><b id="clayDensity">1.80 g/cm³</b></div></div>
+          <div id="clayFeedback" class="feedback" aria-live="polite">先決定凹槽大小並做預測，再放入水中。</div>
+          <details class="howto"><summary>動手做：真實器材版</summary>
+            <p><strong>材料：</strong>油性黏土一團（約乒乓球大小）、裝水的臉盆、抹布、數枚硬幣。</p>
+            <ol><li>把黏土搓成實心球，輕放入水中，觀察結果。</li><li>撈起擦乾，捏成邊緣高、底部薄的缽狀或碗狀，檢查沒有裂縫。</li><li>輕輕平放到水面，觀察它能不能浮。</li><li>加碼挑戰：在浮著的黏土碗裡一枚一枚放硬幣，記錄沉沒前最多能載幾枚。</li></ol>
+            <p><strong>觀察重點：</strong>黏土的質量沒有變，改變的是「碗緣進水前能排開多少水」。<strong>安全：</strong>黏土不入口，結束後洗手並擦乾桌面。</p>
+          </details>
+        </article>
+
+        <article class="maker-card card">
+          <div><span class="card-label">實驗 B｜浮沉子</span><h3>一壓就下沉的水中小客人</h3><p class="maker-lead">滴管裡藏著一顆氣泡。壓瓶身時水壓變大、氣泡被壓小，排開的水變少，浮力就變小。拖動滑桿試試看。</p></div>
+          <div class="sim-status"><span>寶特瓶</span><b id="diverBadge">浮在水面附近</b></div>
+          <svg viewBox="0 0 360 330" role="img" aria-label="示意寶特瓶：瓶中滴管式浮沉子含一顆氣泡，擠壓瓶身時氣泡縮小、浮沉子下沉">
+            <defs><marker id="makerArrowA" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto"><path d="M0,0 L16,8 L0,16Z" fill="#ef476f"/></marker></defs>
+            <rect x="152" y="16" width="56" height="22" rx="5" fill="#ffd166" stroke="#073b4c" stroke-width="5"/>
+            <path d="M160 38 h40 q4 14 22 22 q10 6 10 20 V282 q0 24 -24 24 H152 q-24 0 -24 -24 V80 q0-14 10-20 q18-8 22-22 Z" fill="#e8f8fb" stroke="#073b4c" stroke-width="6"/>
+            <path d="M163 44 h34 q5 11 20 19 q7 5 7 16 V280 q0 20 -20 20 H156 q-20 0 -20 -20 V79 q0-11 7-16 q15-8 20-19 Z" fill="#a9e3ef"/>
+            <g id="squeezeArrows" opacity="0"><path d="M92 178 H122" stroke="#ef476f" stroke-width="9" marker-end="url(#makerArrowA)"/><path d="M268 178 H238" stroke="#ef476f" stroke-width="9" marker-end="url(#makerArrowA)"/></g>
+            <g id="diverPos" style="transform:translate(180px,96px)"><g id="diverGroup"><ellipse cx="0" cy="-18" rx="13" ry="14" fill="#ef476f" stroke="#073b4c" stroke-width="4"/><rect x="-8" y="-6" width="16" height="46" rx="5" fill="#f5fcfe" stroke="#073b4c" stroke-width="4"/><rect id="diverAirRect" x="-5" y="-3" width="10" height="24" rx="3" fill="#fff"/><rect id="diverWaterRect" x="-5" y="21" width="10" height="16" rx="3" fill="#5dc8d7"/></g></g>
+            <text x="12" y="326">滴管上端白色區＝氣泡</text>
+          </svg>
+          <div class="control-group"><label for="squeeze">握壓瓶身的力道 <output id="squeezeOut" for="squeeze">0%</output></label><input id="squeeze" type="range" min="0" max="100" step="1" value="0"><small>放開（拉回 0）浮沉子會怎樣？先猜再試</small></div>
+          <div class="maker-readouts"><div><span>氣泡體積</span><b id="diverBubble">1.20 cm³</b></div><div><span>排開水的重量</span><b id="diverDisp">4.20 g</b></div></div>
+          <div id="diverFeedback" class="feedback" aria-live="polite">浮沉子重 4.00 g。排開水的重量比它重，所以現在浮著。</div>
+          <details class="howto"><summary>動手做：真實器材版</summary>
+            <p><strong>材料：</strong>有蓋寶特瓶（裝滿水）、塑膠滴管或小醬料包、一杯水。</p>
+            <ol><li>先在杯子裡調整滴管吸入的水量，讓它「剛好浮著、快沉不沉」。</li><li>把滴管放進裝滿水的寶特瓶，水加到全滿後鎖緊瓶蓋。</li><li>雙手用力壓瓶身，浮沉子下沉；放手，它又浮上來。</li><li>加碼挑戰：控制力道，讓浮沉子停在瓶子中間不上不下。</li></ol>
+            <p><strong>觀察重點：</strong>壓瓶身時，盯著滴管裡的氣泡——它真的變小了。<strong>安全：</strong>瓶蓋鎖緊再壓；濺出的水立刻擦乾。</p>
+          </details>
+        </article>
+
+        <article class="maker-card card">
+          <div><span class="card-label">實驗 C｜自製小潛水艇</span><h3>用壓載艙控制上浮下潛</h3><p class="maker-lead">真正的潛水艇靠壓載艙「進水變重、排水變輕」。調整進水量，找出讓潛水艇上浮、懸浮、下潛的條件。</p></div>
+          <div class="sim-status"><span>測試水域</span><b id="subBadge">浮在水面</b></div>
+          <svg viewBox="0 0 360 330" role="img" aria-label="示意水域：小潛水艇內有壓載艙，進水量越多整體越重，會從水面下潛到水底">
+            <defs><linearGradient id="subWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#bdeef6"/><stop offset="1" stop-color="#0e7490"/></linearGradient></defs>
+            <path d="M28 70 V292 Q28 312 48 312 H312 Q332 312 332 292 V70" fill="#e8f8fb" stroke="#073b4c" stroke-width="7"/>
+            <path d="M32 118 Q60 108 88 118 T144 118 T200 118 T256 118 T312 118 T332 118 V292 Q332 308 312 308 H48 Q32 308 32 292Z" fill="url(#subWater)"/>
+            <g id="subPos" style="transform:translate(186px,124px)"><g id="subGroup"><path d="M-72 -10 l-14 -10 v40 l14 -10 Z" fill="#0696a7" stroke="#073b4c" stroke-width="4"/><ellipse rx="72" ry="26" fill="#ffd166" stroke="#073b4c" stroke-width="6"/><path d="M10 -24 v-16 h32 v16" fill="#ffb703" stroke="#073b4c" stroke-width="5"/><path d="M18 -40 v-10 h14" fill="none" stroke="#073b4c" stroke-width="4"/><circle cx="42" cy="-2" r="6" fill="#bdeef6" stroke="#073b4c" stroke-width="3"/><circle cx="60" cy="-2" r="5" fill="#bdeef6" stroke="#073b4c" stroke-width="3"/><rect x="-54" y="-14" width="46" height="28" rx="6" fill="#f5fcfe" stroke="#073b4c" stroke-width="4"/><rect id="ballastWater" x="-51" y="11" width="40" height="0" fill="#22a6bd"/><path d="M-31 14 V32" stroke="#073b4c" stroke-width="2"/><text x="-31" y="48" text-anchor="middle">壓載艙</text></g></g>
+          </svg>
+          <div class="control-group"><label for="ballast">壓載艙進水量 <output id="ballastOut" for="ballast">0%</output></label><input id="ballast" type="range" min="0" max="100" step="1" value="0"><small>艇殼 220 g＋壓載艙最多裝 300 g 的水</small></div>
+          <div class="prediction-buttons three-presets"><button data-ballast="20">排水上浮</button><button data-ballast="60">保持懸浮</button><button data-ballast="95">進水下潛</button></div>
+          <div class="maker-readouts"><div><span>潛水艇總重量</span><b id="subMass">220 g</b></div><div><span>整體平均密度</span><b id="subDensity">0.55 g/cm³</b></div></div>
+          <div id="subFeedback" class="feedback" aria-live="polite">壓載艙是空的，平均密度比水小，潛水艇浮在水面。</div>
+          <details class="howto"><summary>動手做：真實器材版</summary>
+            <p><strong>材料：</strong>小寶特瓶、可彎吸管、油性黏土、三枚硬幣、防水膠帶、大水桶或水箱。</p>
+            <ol><li>請大人幫忙在瓶身同一側鑽 2～3 個小孔，孔旁用膠帶貼上硬幣，讓開孔面朝下沉。</li><li>瓶蓋鑽孔插入吸管當空氣管，接縫用黏土封緊不漏氣。</li><li>把潛水艇放入水中：水從小孔進入、空氣從吸管跑出，潛水艇慢慢下沉。</li><li>從吸管用力吹氣：空氣把水從小孔擠出去，潛水艇再度上浮。</li></ol>
+            <p><strong>觀察重點：</strong>吹氣＝排水變輕、進水＝變重，和模擬裡的壓載艙一模一樣。<strong>安全：</strong>鑽孔務必由大人操作；吹氣用的吸管不要交換使用。</p>
+          </details>
+        </article>
+      </div>
     </section>
 
     <section class="panel" id="animation" role="tabpanel" aria-labelledby="tab-animation" hidden>
